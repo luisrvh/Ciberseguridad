@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-image: linear-gradient(135deg, #000000, #1e272e, #fffbfb);
+    color: #fffbfb; /* Este color se mantendrá para el texto */
+    font-size: 16px;
+}
+
+.user-info, h1 {
+    text-align: center;
+    padding-top: 4%;
+}
+
+.user-container {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    border: 1px solid #c49d9d;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    overflow: hidden;
+    background-color: #14131346;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(231, 179, 179);
+}
+
+.user-container:hover {
+    transform: translateY(-5px);
+}
+
+.user-container img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.user-container p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fetch-users, .exit {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bea4a4ad;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.fetch-users:hover, .exit:hover {
+    background-color: #d69c9c;
+    transform: scale(1.05);
+}
